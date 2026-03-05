@@ -12,6 +12,20 @@
     --nav-bg: rgba(5, 5, 5, 0.7);
 }
 
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: var(--bg);
+  pointer-events: none;
+  /* filter: blur(0.8px); */
+  mask-image: radial-gradient(circle, transparent, black);
+  -webkit-mask-image: radial-gradient(circle, transparent, black);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -95,12 +109,10 @@ h1 {
 }
 
 .copyright {
-  display: flex;
-  margin-top: 40px;
-  margin-bottom: 24px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 2rem;
   max-width: 65ch;
+  margin: 0 auto;
+  display: flex;
   color: var(--fg);
 }
 
