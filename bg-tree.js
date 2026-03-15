@@ -1,7 +1,7 @@
 const canvas = document.getElementById('bg-canvas');
 const ctx = canvas.getContext('2d');
 
-// Constants (the "Math" from the original)
+
 const r180 = Math.PI;
 const r90 = Math.PI / 2;
 const r15 = Math.PI / 12;

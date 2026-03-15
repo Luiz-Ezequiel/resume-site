@@ -1,15 +1,19 @@
 :root {
     --bg: #ffffff;
+    --fg-light: #888;
     --fg: #555;
-    --fg-deep: #000000;
+    --fg-deep: #222;
+    --fg-deeper: #000000;
     --nav: rgb(55 65 81 / 1);
 }
 
 :root.dark {
     --bg: #050505;
+    --fg-light: #888;
     --fg: #bbb;
-    --fg-deep: #fff;
-    --nav: rgb(229 231 235 / 1)
+    --fg-deep: #ddd;
+    --fg-deeper: #fff;
+    --nav: rgb(229 231 235 / 1);
 }
 
 #bg-canvas {
@@ -21,9 +25,15 @@
   z-index: -1;
   background: var(--bg);
   pointer-events: none;
-  /* filter: blur(0.8px); */
+}
+
+.tree{
   mask-image: radial-gradient(circle, transparent, black);
   -webkit-mask-image: radial-gradient(circle, transparent, black);
+}
+
+.dots{
+  filter: blur(.5px);
 }
 
 body {
@@ -101,7 +111,7 @@ body {
 
 
 main {
-    padding: 2rem;
+    padding-top: 2.5rem;
     max-width: 65ch;
     margin: 0 auto;
 }
