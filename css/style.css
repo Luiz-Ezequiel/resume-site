@@ -1,7 +1,7 @@
 :root {
     --bg: #ffffff;
     --fg-light: #888;
-    --fg: #555;
+    --fg: #4d4d4d;
     --fg-deep: #222;
     --fg-deeper: #000000;
     --nav: rgb(55 65 81 / 1);
@@ -10,7 +10,7 @@
 :root.dark {
     --bg: #050505;
     --fg-light: #888;
-    --fg: #bbb;
+    --fg: #c9c9c9;
     --fg-deep: #ddd;
     --fg-deeper: #fff;
     --nav: rgb(229 231 235 / 1);

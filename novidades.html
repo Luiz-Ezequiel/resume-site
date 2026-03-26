@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novidades – Luiz Eduardo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/novidades.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <canvas class="tree" id="bg-canvas"></canvas>
+
+    <header class="header">
+        <a href="/" class="logo-link" title="Home">
+            <svg viewBox="0 0 100 100" width="32" height="32">
+                <path fill="currentColor" d="M50 10L10 50l40 40 40-40L50 10zm0 20l20 20-20 20-20-20 20-20z"/>
+            </svg>
+        </a>
+
+        <nav class="nav">
+            <div class="nav-right">
+                <a href="projetos.html" title="Projetos">
+                    <span class="text-label">Projetos</span>
+                    <i class="ri-lightbulb-line icon-only"></i>
+                </a>
+                <a href="sobre.html" title="Sobre">
+                    <span class="text-label">Sobre</span>
+                    <i class="ri-article-line icon-only"></i>
+                </a>
+                <a href="contato.html" title="Contato">
+                    <span class="text-label">Contato</span>
+                    <i class="ri-mail-line icon-only"></i>
+                </a>
+                <a href="novidades.html" title="Novidades">
+                    <span class="text-label">Novidades</span>
+                    <i class="ri-newspaper-line icon-only"></i>
+                </a>
+                <a href="https://github.com/Luiz-Ezequiel" target="_blank" class="hide-mobile">
+                    <i class="ri-github-line" style="font-size: 1.2rem;"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/luiz-ezequiel/" target="_blank" class="hide-mobile">
+                    <i class="ri-linkedin-line" style="font-size: 1.2rem;"></i>
+                </a>
+                <button id="themeToggle" class="theme-btn" title="Toggle Theme">
+                    <i class="ri-moon-line"></i>
+                    <i class="ri-sun-line"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="texto">
+            <h1>Novidades</h1>
+        </div>
+
+        <article>
+            <div class="texto">
+                <p>O que estou aprendendo e escrevendo.</p>
+
+                <hr>
+
+                <!-- ── TIL ── -->
+                <section>
+                    <h2>TIL — Today I Learned</h2>
+                    <ul class="til-list">
+                        <li class="til-item">
+                            <span class="til-date">Mar 25</span>
+                            <span class="til-text">
+                                O <code>rsync</code> tem uma flag <code>--dry-run</code> que simula a execução sem mover nenhum arquivo — útil para testar scripts de backup antes de rodar de verdade.
+                            </span>
+                        </li>
+                        <li class="til-item">
+                            <span class="til-date">Mar 18</span>
+                            <span class="til-text">
+                                No Ansible, <code>ansible-lint</code> detecta erros de boas práticas antes do playbook rodar. Economiza muito tempo de debug em ambientes de produção.
+                            </span>
+                        </li>
+                        <li class="til-item">
+                            <span class="til-date">Mar 10</span>
+                            <span class="til-text">
+                                <code>tcpdump -nn -i any port 53</code> é a forma mais rápida de diagnosticar problemas de DNS sem precisar de nenhuma ferramenta adicional.
+                            </span>
+                        </li>
+                        <li class="til-item">
+                            <span class="til-date">Fev 28</span>
+                            <span class="til-text">
+                                Volumes nomeados no Docker persistem entre recriações de container — diferente de bind mounts, que dependem de um caminho no host.
+                            </span>
+                        </li>
+                    </ul>
+                </section>
+
+                <hr>
+
+                <!-- ── Blog ── -->
+                <section>
+                    <h2>Blog / Devlog</h2>
+                    <ul class="blog-list">
+                        <li class="blog-item">
+                            <div class="blog-meta">
+                                <span>Mar 2026</span>
+                                <span class="dot">·</span>
+                                <span>Homelab</span>
+                            </div>
+                            <a href="#" class="blog-title">Montando um servidor DNS local com Pi-hole no homelab</a>
+                            <p class="blog-desc">Como configurei o Pi-hole num container Docker para bloquear anúncios em toda a rede local e o que aprendi sobre DNS no processo.</p>
+                        </li>
+                        <li class="blog-item">
+                            <div class="blog-meta">
+                                <span>Fev 2026</span>
+                                <span class="dot">·</span>
+                                <span>Ansible</span>
+                            </div>
+                            <a href="#" class="blog-title">Automatizando configuração de servidores com Ansible do zero</a>
+                            <p class="blog-desc">Minha primeira experiência escrevendo playbooks reais — o que funcionou, o que quebrou e por que idempotência importa mais do que parece.</p>
+                        </li>
+                        <li class="blog-item">
+                            <div class="blog-meta">
+                                <span>Jan 2026</span>
+                                <span class="dot">·</span>
+                                <span>Linux</span>
+                            </div>
+                            <a href="#" class="blog-title">LVM na prática: expandindo volumes sem downtime</a>
+                            <p class="blog-desc">Um resumo prático de como o LVM funciona e como executei um redimensionamento de volume em ambiente corporativo sem interromper o serviço.</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <footer class="copyright">
+        <span class="copyright-text">
+            2026 © Luiz Eduardo Oliveira Ezequiel
+        </span>
+    </footer>
+
+    <script src="js/bg-tree.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
