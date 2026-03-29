@@ -24,7 +24,7 @@ btn.addEventListener('click', () => {
     const mailtoLink = `mailto:ezequiel.luizedu@gmail.com?subject=${assunto}&body=${corpo}`;
 
     btn.disabled = true;
-    window.location.href = mailtoLink;
+    window.open(mailtoLink, '_blank')
 
     setTimeout(() => {
         feedback.textContent = 'Seu cliente de email foi aberto. Obrigado!';
