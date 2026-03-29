@@ -66,53 +66,17 @@
             <div class="texto">
                 <p>O que estou aprendendo e escrevendo.</p>
 
-                <hr>
-
-                <!-- ── TIL ── -->
-                <section>
-                    <h2>TIL — Today I Learned</h2>
-                    <ul class="til-list">
-                        <li class="til-item">
-                            <span class="til-date">Mar 25</span>
-                            <span class="til-text">
-                                O <code>rsync</code> tem uma flag <code>--dry-run</code> que simula a execução sem mover nenhum arquivo — útil para testar scripts de backup antes de rodar de verdade.
-                            </span>
-                        </li>
-                        <li class="til-item">
-                            <span class="til-date">Mar 18</span>
-                            <span class="til-text">
-                                No Ansible, <code>ansible-lint</code> detecta erros de boas práticas antes do playbook rodar. Economiza muito tempo de debug em ambientes de produção.
-                            </span>
-                        </li>
-                        <li class="til-item">
-                            <span class="til-date">Mar 10</span>
-                            <span class="til-text">
-                                <code>tcpdump -nn -i any port 53</code> é a forma mais rápida de diagnosticar problemas de DNS sem precisar de nenhuma ferramenta adicional.
-                            </span>
-                        </li>
-                        <li class="til-item">
-                            <span class="til-date">Fev 28</span>
-                            <span class="til-text">
-                                Volumes nomeados no Docker persistem entre recriações de container — diferente de bind mounts, que dependem de um caminho no host.
-                            </span>
-                        </li>
-                    </ul>
-                </section>
-
-                <hr>
-
-                <!-- ── Blog ── -->
                 <section>
                     <h2>Blog / Devlog</h2>
                     <ul class="blog-list">
                         <li class="blog-item">
                             <div class="blog-meta">
-                                <span>Mar 2026</span>
+                                <span>Fev 2026</span>
                                 <span class="dot">·</span>
                                 <span>Homelab</span>
                             </div>
-                            <a href="#" class="blog-title">Montando um servidor DNS local com Pi-hole no homelab</a>
-                            <p class="blog-desc">Como configurei o Pi-hole num container Docker para bloquear anúncios em toda a rede local e o que aprendi sobre DNS no processo.</p>
+                            <a href="https://www.linkedin.com/posts/luiz-ezequiel_linux-nginx-bash-activity-7432779662566559744-Zqtb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD3ZcNMBi2Ku4RKFsGnxjihKWvi7WUWdUWE" class="blog-title">Script simples de monitoramento</a>
+                            <p class="blog-desc">Criei um script simples para monitorar a saúde do Nginx rodando como um serviço do systemd. A cada 30 segundos ele verifica se o serviço está ativo, registra tudo em log e dispara um alerta crítico quando detecta três falhas consecutivas.</p>
                         </li>
                         <li class="blog-item">
                             <div class="blog-meta">
@@ -120,17 +84,17 @@
                                 <span class="dot">·</span>
                                 <span>Ansible</span>
                             </div>
-                            <a href="#" class="blog-title">Automatizando configuração de servidores com Ansible do zero</a>
-                            <p class="blog-desc">Minha primeira experiência escrevendo playbooks reais — o que funcionou, o que quebrou e por que idempotência importa mais do que parece.</p>
+                            <a href="#" class="blog-title">Automatizando configuração de um Ubuntu Server</a>
+                            <p class="blog-desc">Automatizando a configuração de um Ubuntu server, com updates e hardening</p>
                         </li>
                         <li class="blog-item">
                             <div class="blog-meta">
                                 <span>Jan 2026</span>
                                 <span class="dot">·</span>
-                                <span>Linux</span>
+                                <span>Homelab</span>
                             </div>
-                            <a href="#" class="blog-title">LVM na prática: expandindo volumes sem downtime</a>
-                            <p class="blog-desc">Um resumo prático de como o LVM funciona e como executei um redimensionamento de volume em ambiente corporativo sem interromper o serviço.</p>
+                            <a href="#" class="blog-title">Montando um servidor DNS local com Pi-hole no homelab</a>
+                            <p class="blog-desc">Como configurei o Pi-hole num container Docker para bloquear anúncios em toda a rede local e o que aprendi sobre DNS no processo.</p>
                         </li>
                     </ul>
                 </section>
