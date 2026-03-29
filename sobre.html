@@ -12,6 +12,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+    .sobre-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sobre-title-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+    }
+
+    .sobre-title-group h1 {
+        margin: 0;
+    }
+
+    .sobre-tagline {
+        font-size: 0.85rem;
+        color: var(--fg-light);
+        margin: 0;
+    }
+
+    .sobre-avatar {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
+        border: 1px solid rgba(125, 125, 125, 0.2);
+    }
+
+    .sobre-avatar-placeholder {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        background: #8882;
+        border: 1px solid rgba(125, 125, 125, 0.2);
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        color: var(--fg-light);
+        font-size: 1.75rem;
+    }
+</style>
+
 </head>
 <body>
     <canvas class="dots" id="bg-canvas"></canvas>
@@ -56,8 +103,20 @@
     </header>
 
     <main>
-        <div class="texto">
-            <h1>Sobre</h1>
+        <div class="texto sobre-header">
+            <div class="sobre-title-group">
+                <h1>Sobre</h1>
+                <p class="sobre-tagline">Infraestrutura · DevOps · Rio de Janeiro</p>
+            </div>
+            <img
+                src="img/foto.jpg"
+                alt="Foto de Luiz Eduardo"
+                class="sobre-avatar"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+            <div class="sobre-avatar sobre-avatar-placeholder" style="display:none;">
+                <i class="ri-user-line"></i>
+            </div>
         </div>
 
         <article>
