@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre – Luiz Eduardo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sobre.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <canvas class="dots" id="bg-canvas"></canvas>
+
+    <header class="header">
+        <a href="/" class="logo-link" title="Home">
+            <svg viewBox="0 0 100 100" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+            <line x1="14" y1="50" x2="86" y2="50" stroke="currentColor" stroke-width="1.2" opacity="0.18"/>
+            <line x1="50" y1="14" x2="50" y2="86" stroke="currentColor" stroke-width="1.2" opacity="0.18"/>
+            <rect x="17" y="14" width="16" height="62" fill="currentColor"/>
+            <rect x="17" y="62" width="54" height="16" fill="currentColor"/>
+            <circle cx="50" cy="50" r="2.5" fill="currentColor" opacity="0.25"/>
+            </svg>
+        </a>
+
+        <nav class="nav">
+            <div class="nav-right">
+                <a href="projetos.html" title="Projetos">
+                    <span class="text-label">Projetos</span>
+                    <i class="ri-lightbulb-line icon-only"></i>
+                </a>
+                <a href="sobre.html" title="Sobre">
+                    <span class="text-label">Sobre</span>
+                    <i class="ri-article-line icon-only"></i>
+                </a>
+                <a href="contato.html" title="Contato">
+                    <span class="text-label">Contato</span>
+                    <i class="ri-mail-line icon-only"></i>
+                </a>
+                <!-- <a href="novidades.html" title="Novidades">
+                    <span class="text-label">Novidades</span>
+                    <i class="ri-global-line icon-only"></i>
+                </a> -->
+                <a href="https://github.com/Luiz-Ezequiel" target="_blank" class="hide-mobile">
+                    <i class="ri-github-line" style="font-size: 1.2rem;"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/luiz-ezequiel/" target="_blank" class="hide-mobile">
+                    <i class="ri-linkedin-line" style="font-size: 1.2rem;"></i>
+                </a>
+                <button id="themeToggle" class="theme-btn" title="Toggle Theme">
+                    <i class="ri-moon-line"></i>
+                    <i class="ri-sun-line"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="texto sobre-header">
+            <div class="sobre-title-group">
+                <h1>Sobre</h1>
+                <p class="sobre-tagline">Infraestrutura · DevOps · Rio de Janeiro</p>
+            </div>
+            <img
+                src="img/foto.jpg"
+                alt="Foto de Luiz Eduardo"
+                class="sobre-avatar"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+            <div class="sobre-avatar sobre-avatar-placeholder" style="display:none;">
+                <i class="ri-user-line"></i>
+            </div>
+        </div>
+
+        <article>
+            <div class="texto">
+                <p>
+                    Sou Luiz Eduardo, profissional de Infraestrutura e DevOps baseado no
+                    <a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(cidade)" target="_blank" rel="noopener">Rio de Janeiro</a>.
+                    Meu interesse por tecnologia sempre foi guiado pela curiosidade de entender o que está por baixo —
+                    como o sistema operacional gerencia recursos, como a rede realmente funciona,
+                    por que aquele serviço caiu às 3 da manhã.
+                </p>
+                <p>
+                    Trabalhei na <a href="https://www.tim.com.br/" target="_blank" rel="noopener">TIM Brasil</a> administrando
+                    servidores Linux de grande escala em ambiente corporativo, com suporte N3, operação em
+                    <a href="https://azure.microsoft.com/pt-br" target="_blank" rel="noopener">Azure</a> e
+                    <a href="https://www.oracle.com/cloud/" target="_blank" rel="noopener">OCI</a>,
+                    e participação em war rooms para incidentes críticos — ambientes orientados a SLA
+                    onde não há margem para erro.
+                </p>
+                <p>
+                    Fora do trabalho, mantenho um <a href="projetos.html">homelab</a> onde estudo de verdade:
+                    Ubuntu Server, Docker, Ansible, automações em Bash. É onde testo o que aprendo
+                    e quebro coisas com segurança antes de quebrar em produção.
+                    Estou expandindo o repertório para Kubernetes e Terraform — a direção natural
+                    de quem já tem a base sólida em infra e quer subir a abstração sem perder o chão.
+                </p>
+                <p>
+                    Quando não estou no terminal, estou lendo ou treinando Jiu-Jitsu.
+                </p>
+
+                <hr>
+
+                <section>
+                    <h2>Experiência</h2>
+                    <ul class="timeline">
+                        <li class="timeline-item">
+                            <div class="timeline-header">
+                                <span class="timeline-title">Jovem Aprendiz em Infraestrutura de TI</span>
+                                <span class="timeline-date">Out 2024 – Jan 2026</span>
+                            </div>
+                            <span class="timeline-sub">TIM Brasil · Rio de Janeiro</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Educação</h2>
+                    <ul class="timeline">
+                        <li class="timeline-item">
+                            <div class="timeline-header">
+                                <span class="timeline-title">Bacharelado em Ciência da Computação</span>
+                                <span class="timeline-date">2022 – presente</span>
+                            </div>
+                            <span class="timeline-sub">Universidade Veiga de Almeida</span>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-header">
+                                <span class="timeline-title">Programação em Python</span>
+                                <span class="timeline-date">Mai 2024 – Set 2024</span>
+                            </div>
+                            <span class="timeline-sub">SENAC Madureira</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Certificações</h2>
+                    <ul class="cert-list">
+                        <li>
+                            <a href="https://learn.microsoft.com/en-us/users/luizeduardooliveiraezequiel-7761/credentials/8c6be6e60fc2d971">
+                            <i class="ri-award-line"></i>
+                           <span>Microsoft Azure Fundamentals — AZ-900</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=20B71DA7A2B616F34E32111C9E948902BA8B845B49C5E739D1448D6EDAA904E5">
+                            <i class="ri-award-line"></i>
+                            <span>Oracle OCI Foundations Associate</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=D4CA326EE182AC020C125FEE3A23696EA2D43AD4361D78F9D4620C7767D36A00">
+                            <i class="ri-award-line"></i>
+                            <span>Oracle OCI AI Foundations Associate</span>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Tecnologias</h2>
+                    <a href="https://ubuntu.com/server" class="link-especial" target="_blank" rel="noopener"><span class="link-especial-img" style="background-image: url(&quot;https://github.com/ubuntu.png&quot;);"></span>
+                    Linux
+                    </a>
+                    <a href="https://www.gnu.org/software/bash/" class="link-especial" target="_blank" rel="noopener"><span class="link-especial-img" style="background-image: url(&quot;https://github.com/bash-it.png&quot;);"></span>
+                    Bash
+                    </a>
+                    <a href="https://azure.microsoft.com/pt-br" class="link-especial" target="_blank" rel="noopener"><span class="link-especial-img" style="background-image: url(&quot;https://github.com/azure.png&quot;);"></span>
+                    Azure
+                    </a>
+                    <a href="https://www.oracle.com/br/" class="link-especial" target="_blank" rel="noopener"><span class="link-especial-img" style="background-image: url(&quot;https://github.com/oracle.png&quot;);"></span>
+                    OCI
+                    </a>
+                    <a href="https://www.docker.com/" class="link-especial" target="_blank" rel="noopener"><span class="link-especial-img" style="background-image: url(&quot;https://github.com/docker.png&quot;);"></span>
+                    Docker
+                    </a>
+                    <a href="https://docs.ansible.com/" class="link-especial" target="_blank" rel="noopener"><span class="link-especial-img" style="background-image: url(&quot;https://github.com/ansible.png&quot;);"></span>
+                    Ansible
+                    </a>
+                    <a href="https://git-scm.com/" class="link-especial" target="_blank" rel="noopener"><span class="link-especial-img" style="background-image: url(&quot;https://github.com/git.png&quot;);"></span>
+                    Git
+                    </a>
+                    <a href="https://www.python.org/" class="link-especial" target="_blank" rel="noopener"><span class="link-especial-img" style="background-image: url(&quot;https://github.com/python.png&quot;);"></span>
+                    Python
+                    </a>
+
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <button id="toTopBtn" class="scroll-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+
+
+    <footer class="copyright">
+        <span class="copyright-text">
+            2026 © Luiz Eduardo Oliveira Ezequiel
+        </span>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <script src="js/bg-noise.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scroll-top.js"></script>
+</body>
+</html>

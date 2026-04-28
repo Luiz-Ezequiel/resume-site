@@ -1,0 +1,131 @@
+.contato-links {
+    list-style: none;
+    padding: 0;
+    margin: 1.25em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.contato-links li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    border-bottom: none !important;
+    color: var(--fg-deep);
+    font-size: 0.95rem;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.contato-links li a:hover {
+    opacity: 1;
+    border-bottom: none !important;
+}
+
+.contato-links i {
+    font-size: 1.1rem;
+    color: var(--fg-light);
+    flex-shrink: 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--fg-light);
+}
+
+.form-group input,
+.form-group textarea {
+    background: transparent;
+    border: 1px solid rgba(125, 125, 125, 0.25);
+    border-radius: 0.375rem;
+    padding: 0.6rem 0.75rem;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 0.95rem;
+    color: var(--fg-deep);
+    outline: none;
+    transition: border-color 0.2s;
+    resize: vertical;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--fg-light);
+    opacity: 0.6;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: rgba(125, 125, 125, 0.6);
+}
+
+.form-group textarea {
+    min-height: 130px;
+}
+
+.btn-send {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: none;
+    border: 1px solid rgba(125, 125, 125, 0.3);
+    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 0.9rem;
+    color: var(--fg-deep);
+    cursor: pointer;
+    transition: border-color 0.2s, opacity 0.2s;
+    margin-top: 0.25rem;
+}
+
+.btn-send:hover {
+    border-color: rgba(125, 125, 125, 0.7);
+}
+
+.btn-send:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.form-feedback {
+    font-size: 0.85rem;
+    margin-top: 0.75rem;
+    min-height: 1.25rem;
+    color: var(--fg-light);
+}
+
+.form-feedback.success {
+    color: #4caf82;
+}
+
+.form-feedback.error {
+    color: #e05c5c;
+}
+
+section {
+    margin-top: 2.5rem;
+}
+
+section h2 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--fg-light);
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
